@@ -1,15 +1,7 @@
 <?php
-    // Include file koneksi
+    
     include 'config.php';
 
-    // session_start();
-    
-    //     // cek apakah yang mengakses halaman ini sudah login
-    //     if($_SESSION['level']==""){
-    //         header("location:iindex.php?pesan=gagal");
-    //     }
-
-    // Proses penyimpanan data jika form disubmit
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['update'])) {
             $nama = $_POST['nama'];
